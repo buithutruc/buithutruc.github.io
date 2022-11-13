@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* CSS document for Truc's resume website
+Devlopped by: Truc
+Script Date: November 12th, 2022
+*/
+
+/* Styling the general setting */
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Styling the header and inside header */
+header{
+    background-color: rgb(74, 151, 218);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;  
+}
+
+.links {
+    width: auto;
+    text-align: center;
+    color: black;
+    font-size: 100%;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Styling the general main setting */
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+.section{
+    flex-grow: 1;
+    padding-bottom: 15px;
+}
+
+h2{
+    width: 220px;
+    border: solid 1px rgb(74, 151, 218) ;
+    margin-left: 35%;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Styling the introduction (about me) section */
+#introduction{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile{
+    padding: 25px 10px 10px 10px;
+    flex-grow: 1;    
+}
+.about{
+    padding: 10px;
+    flex-grow: 2;
+}
+#name{
+    color: rgb(74, 151, 218);
+}
+
+/* Styling the skills section */
+#skill{
+    background-color: rgba(74, 151, 218, 0.4);
+}
+
+table{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+tr, td{
+    padding-right: 30px;
+}
+
+
+/* Styling the projects section */
+#mobile, #webdev{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 5px;
+    
+}
+#yelp{
+    float: right;
+}
+
+#yelpimage{
+    border-radius: 12px;
+}
+
+#caption{
+    font-size: 65%;
+    font-style: italic;
+}
+
+/* Styling the education section */
+#education{
+    background-color: rgba(74, 151, 218, 0.4);
+}
+
+.certificate{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.detail{
+    margin-left: 5%;
+    margin-right: 5%;
+}
