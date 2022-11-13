@@ -76,6 +76,11 @@ h2{
     padding: 25px 10px 10px 10px;
     flex-grow: 1;    
 }
+
+#profileimage{
+    height: 280px;
+}
+
 .about{
     padding: 10px;
     flex-grow: 2;
@@ -87,6 +92,10 @@ h2{
 /* Styling the skills section */
 #skill{
     background-color: rgba(74, 151, 218, 0.4);
+}
+
+.mobile{
+    display: none;
 }
 
 table{
@@ -128,6 +137,7 @@ tr, td{
     margin-right: 5%;
 }
 
+/* Styling the activities section */
 .detail{
     margin-left: 5%;
     margin-right: 5%;
