@@ -120,6 +120,16 @@ h2{
     color: rgb(74, 151, 218);
 }
 
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.contacts > a {
+    padding: 8px;
+}
+
 /* Styling the skills section */
 #skill{
     background-color: rgba(74, 151, 218, 0.4);
