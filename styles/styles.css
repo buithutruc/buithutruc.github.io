@@ -46,6 +46,37 @@ a {
     color: white;
 }
 
+/* Styling the dropdown menu for PROJECTS */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow:auto;
+    background-color: rgb(74, 151, 218);
+}
+
+.dropdown:hover .dropdown-options {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dropdown-option-item{
+    width: 100%;
+    padding-top: 8px;
+
+}
+
+.links-project {
+
+    color: black;
+
+}
+
 /* Styling the general main setting */
 main{
     display: flex;
