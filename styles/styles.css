@@ -9,6 +9,7 @@ Script Date: November 12th, 2022
 body{
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
 
 header, main{
