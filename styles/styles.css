@@ -109,7 +109,10 @@ h2{
 }
 
 #profileimage{
-    height: 280px;
+    width: 200px;
+    height: 250px;
+    padding-bottom: 5px;
+    object-fit: cover;
 }
 
 .about{
