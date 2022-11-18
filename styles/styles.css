@@ -71,10 +71,16 @@ a {
 
 }
 
-.links-project {
-
+#link-mobile, #link-web{
     color: black;
+}
 
+#link-mobile:hover, #link-web:hover{
+    color: white;
+}
+
+.links-project {
+    color: black;
 }
 
 /* Styling the general main setting */
