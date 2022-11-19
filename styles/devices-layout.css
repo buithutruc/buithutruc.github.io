@@ -71,6 +71,7 @@ h2{
 .profile{
     display: flex;
     flex-direction: row;
+    margin: 0;
     padding: 8px;
     flex-grow: 1;
     justify-content: center;    
