@@ -85,7 +85,8 @@ h2{
     object-fit: cover;
 }
 .about{
-    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     flex-grow: 2;
 }
 #name{
