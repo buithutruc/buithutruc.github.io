@@ -6,13 +6,14 @@ Script Date: November 12th, 2022
 */
 
 /* Styling the general setting */
-body{
-    background-color: black;
+html{
+    color: rgba(0,0,0,0.8);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-}
+} 
 
-header, main{
+body{
+    background-color: rgba(0,0,0);
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -199,4 +200,24 @@ tr, td{
 .detail{
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/* Styling the footer */
+footer{
+    background-color: rgb(74, 151, 218);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+
+.datep {
+    text-align: center; 
+    padding: auto;
+}
+
+.datep input {
+    font: inherit;
+    background-color: inherit;
+    border-style: hidden;
 }
