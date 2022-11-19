@@ -129,7 +129,8 @@ h2{
 }
 
 .about{
-    padding: 10px;
+    margin-left: 3%;
+    margin-right: 5%;
     flex-grow: 2;
 }
 #name{
