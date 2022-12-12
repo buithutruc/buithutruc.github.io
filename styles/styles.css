@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-/* CSS document for Truc's resume website
-Developed by: Truc
-*/
+/* CSS document developed by Truc, the web developer */
 
-/* Styling the general setting */
+/* GENERAL SETTING */
 html{
     color: hsla(0, 3%, 30%, 1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,7 +10,6 @@ html{
 } 
 
 body{
-    /* background-color: hsla(350, 100%, 88%, 0.5); */
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -21,7 +18,7 @@ p{
     text-align: justify;
 }
 
-/* Styling the header and inside header */
+/* HEADER */
 header{
     margin-top: 25px;
     justify-content: center;
@@ -48,7 +45,7 @@ a {
 }
 
 
-/* Styling the general main setting */
+/* MAIN */
 main{
     display: flex;
     flex-direction: column;
@@ -60,7 +57,7 @@ main{
 }
 
 
-/* Styling the introduction (about me) section */
+/* Introduction (about me) section */
 #introduction{
     display: flex;
     flex-direction: row;
@@ -90,7 +87,6 @@ main{
     color: rgb(74, 151, 218);
 }
 
-
 .contacts{
     display: flex;
     flex-direction: row;
@@ -100,16 +96,8 @@ div.contacts > a {
     padding: 8px;
 }
 
-.mywork {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(74, 151, 218);
-    padding: 0.5rem;
-    border-radius: 1rem;
-    align-self: center;
-}
 
-/* Styling the Project section */
+/* Projects section */
    
 .grid {
     display: grid;
@@ -117,16 +105,19 @@ div.contacts > a {
     gap: 5vw;
 }
 
-
-.grid > article img {
+.project img {
     width: 100%;
 }
 
-.text {
+.project_text {
     padding: 0 20px 20px;
 }
 
-.text > button {
+.project_text p{
+    font-size: 0.8rem;
+}
+
+.project_text > button {
     background: rgb(74, 151, 218);
     border: 0;
     color: white;
@@ -142,17 +133,16 @@ button:hover {
     background-color: pink;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-
-
-/* Styling the footer */
+/* FOOTER */
 footer{
     justify-content: center;
 }
 
 
-.datep {
+/* .datep {
     text-align: center; 
     padding: auto;
 }
@@ -161,4 +151,4 @@ footer{
     font: inherit;
     background-color: inherit;
     border-style: hidden;
-}
+} */
