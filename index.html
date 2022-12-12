@@ -15,43 +15,9 @@
         window.addEventListener('load', startup, false);
     </script>
     <style>
-   
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5vw;
-}
-
-
-.grid > article img {
-    width: 100%;
-}
-
-.text {
-    padding: 0 20px 20px;
-}
-
-.text > button {
-    background: rgb(74, 151, 218);
-    border: 0;
-    color: white;
-    padding: 10px;
-    width: auto;
-    /* align-self: center;
-    justify-self: center; */
-    position: relative;
-    left: 40%;
-    border-radius: 0.5rem;
- 
-}
-
-button:hover {
-    background-color: pink;
-    color: white;
-    font-size: 1rem;
-    /* box-shadow: 2px 3px 4px darkgreen; */
-}
-
+        .text p{
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 <body>
@@ -89,23 +55,26 @@ button:hover {
                
             </div>
         </div>
-        <!-- <a class="mywork" href="">See my work</a> -->
+        
         <div><br></div>
+
+        <!-- My work -->
         <div class="grid">
             <article>
                 <img src="images/test.png" alt="Sample photo">
                 <div class="text">
-                    <h3>Seamlessly visualize quality</h3>
-                    <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
-                    <button onclick="window.open('hotel/reservation.html','_blank');">See my work</button>
+                    <h3>Hotel Room Reservation</h3>
+                    <!--Reference: https://www.hyatt.com/payment/details -->
+                    <p>built using HTML, CSS, and JavaScript.</p>
+                    <button onclick="window.open('hotel/rooms.html','_blank');">See my work</button>
                 </div>
             </article>
             <article>
                 <img src="images/test.png" alt="Sample photo">
                 <div class="text">
-                    <h3>Completely Synergize</h3>
-                    <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
-                    <button onclick="window.open('hotel/reservation.html','_blank');">See my work</button>
+                    <h3>Project 2</h3>
+                    <p>built using HTML, CSS, and JavaScript.</p>
+                    <button onclick="window.open('hotel/rooms.html','_blank');">See my work</button>
                 </div>
             </article>
             
