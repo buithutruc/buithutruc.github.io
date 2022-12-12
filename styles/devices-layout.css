@@ -1,57 +1,38 @@
 @charset "utf-8";
 
 /* CSS document for Truc's resume website on different devices
-Devlopped by: Truc
-Script Date: November 13th, 2022
+Developed by: Truc
 */
 
-
-/*breakpoint*/
-
 /* mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600.8px) {
     body{
-        /* font-size: 70%; */
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .grid {
-        /* margin-left: 5%;
-        margin-right: 5%; */
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        /* grid-template-rows: auto; */
-        gap: 30px;
+        grid-template-columns: 1fr;
     }
-    
-header{
-    /* background-color: rgb(74, 151, 218); */
-    justify-content: center;
-    padding: 0;
-}
+   
 
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
 
-.navigation{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-/* 
-hr {
-    display: none;
-} */
+    .links {
+        width: auto;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        color: black;
+        border: solid 2px white;
+        font-size: 100%;
+        flex-grow: 1;
 
-.links {
-    width: auto;
-    height: 30px;
-    text-align: center;
-    padding-top: 10px;
-    color: black;
-    border: solid 2px white;
-    font-size: 100%;
-    flex-grow: 1;
-
-}
+    }
 
 /* Styling the general main setting */
 main{
@@ -103,11 +84,10 @@ h2{
 
 
 /* tablet */
-@media screen and  (max-width:991px) {
+@media screen and (max-width: 991.8px) and (min-width: 600.8px) {
  
     h2{
         width: 75%;
-        /* border: solid 1px rgb(74, 151, 218) ; */
         font-size: 120%;
         margin-left: 10%;
         margin-right: 10%;
@@ -120,10 +100,4 @@ h2{
         margin-right: 5%;
     }
 
-    .grid {
-        margin-left: 5%;
-        margin-right: 5%;
-        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-        gap: 30px;
-    }
 }

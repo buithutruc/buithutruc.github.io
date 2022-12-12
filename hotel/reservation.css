@@ -1,0 +1,822 @@
+@charset "utf-8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Calibri', sans-serif;
+}
+
+/* General Section */
+
+.background-image {
+    background-image: url(/Team_Project/images/1-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#active {
+    background-color: #f9dc5c;
+}
+
+a {
+    margin: 0px 20px;
+    font-family: 'Bradley Hand ITC', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+h1,
+h2 {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36pt;
+    color: #2b3a3a;
+    text-align: center;
+    margin: 15%;
+}
+
+h2 {
+    font-size: 30pt;
+    color: #000033;
+}
+
+p {
+    margin: 0;
+}
+
+.content {
+    margin: 0px 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+/* Header Section */
+
+header {
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    height: 64px;
+}
+
+.header-other {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+}
+
+.header-middle {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.header-other a {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    font-size: 11pt;
+    color: #008489
+}
+
+.header-middle a {
+    color: #000033;
+}
+
+/* Attraction Page Section */
+.attraction-text {
+    margin: 0px 4vw;
+}
+
+.attraction-text h2 {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    color: #0c3724;
+}
+
+.attraction-text p {
+    font-family: 'Calibri', sans-serif;
+    font-size: 14pt;
+    color: #0c3724;
+}
+
+h3 {
+    font-family: 'Calibri', sans-serif;
+    font-weight: 200;
+    font-size: 24pt;
+    color: #0c3724;
+}
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    margin: 2% 3%;
+}
+
+.activity-title {
+    font-family: 'Calibri', sans-serif;
+    margin-left: 1vw;
+    font-size: 32px;
+}
+
+.ul-activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #98b5c8;
+    border-radius: 30px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.dot1,
+.dot2 {
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text {
+    color: #080000;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: auto;
+    ;
+    font-family: 'Calibri', sans-serif;
+}
+
+.image {
+    vertical-align: middle;
+    width: auto;
+}
+
+.activity-card {
+    background-color: #574c45;
+    border-radius: 16px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.attraction-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 4vw;
+    margin-bottom: 5rem;
+    column-gap: 4vw;
+}
+
+.attraction-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline-start: 0;
+    padding-inline-start: 20px;
+    list-style-position: inside;
+}
+
+.activity-card img {
+    object-fit: cover;
+    height: 26vh;
+    width: 20vw;
+}
+
+.activity-card p {
+    color: white;
+    padding: 10px;
+    white-space: normal;
+}
+
+article {
+    font-family: 'Calibri', sans-serif;
+    font-weight: light;
+    font-size: 14pt;
+}
+
+.attractions-content {
+    margin-bottom: 5rem;
+}
+
+.activity-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding-inline-start: 0;
+}
+
+.activity-list li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 1px 1px black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.list-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Dining Section */
+
+.dining h2 {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    font-size: 30pt;
+    font-weight: 600;
+    color: #574c45;
+    margin: 0 2vw;
+}
+
+.dining p {
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18pt;
+    color: #574c45;
+    margin-bottom: 26px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.dining img {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.dining-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    margin: 0px 2vw;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5rem;
+}
+
+.restaurant {
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
+    width: 25vw;
+    min-width: 256px;
+    background-color: #574c45;
+    border-radius: 16px;
+    place-items: center;
+}
+
+.restaurant img {
+    object-fit: cover;
+    width: 24vw;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant h4 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 30pt;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.restaurant p {
+    margin: 0 1vw;
+    color: #ffffff;
+}
+
+.restaurant img:hover {
+    box-shadow: 0 0 2px 1px white;
+}
+
+.restaurant a {
+    margin: 0;
+}
+
+/* Reservation Section */
+
+.reservation h2 {
+    text-align: center;
+}
+
+.reservation p {
+    font-family: 'Calibri', sans-serif;
+    font-size: 12pt;
+    font-weight: 600px;
+    margin: 0 2vw;
+}
+
+.reservation-grid {
+    font-family: 'Calibri', sans-serif;
+    margin: 28px 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    column-gap: 2vw;
+}
+
+.hotel img {
+    object-fit: cover;
+    height: 200px;
+    width: 30vw;
+}
+
+.hotel {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.room-name {
+    justify-self: center;
+}
+
+.room-name input[type=radio] {
+    display: inline;
+    height: 16px;
+}
+
+.room-name h4 {
+    display: inline;
+}
+
+.room-price {
+    position: relative;
+}
+
+.room-price p {
+    position: absolute;
+    bottom: 2%;
+    left: 20%;
+    color: white;
+    font-size: 25px;
+}
+
+.background-of-price {
+    position: absolute;
+    height: 15%;
+    bottom: 2%;
+    width: 100%;
+    background-color: #546d8394;
+}
+
+.room-text {
+    position: relative;
+}
+
+.room-text h4 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+}
+
+.reservation-form {
+    display: grid;
+    width: min-content;
+    background-color: white;
+    padding: 12px;
+    outline-color: #000000;
+    outline-style: auto;
+    border-radius: 12px;
+    outline: black;
+    box-shadow: 6px 4px 4px black;
+    align-content: center;
+    margin: auto;
+    place-items: center;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.reservation-form form {
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+}
+
+.reservation-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 24px 25vw;
+}
+
+.price-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 6px 4px 4px black;
+}
+
+.submit-button {
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 6px 4px 4px black;
+}
+
+.reservation-content {
+    margin-bottom: 5rem;
+}
+
+.reservation-form tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Special Events Section */
+
+.special_events {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+}
+
+.special_events_txt_and_img {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+
+    margin-bottom: 3rem;
+}
+
+.special_events_img {
+    max-width: 30vw;
+    max-height: 100%;
+    float: left;
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+}
+
+.special_events_txt {
+    max-width: 100%;
+    text-align: justify;
+    align-self: center;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.special_events_container h2 {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    size: 30pt;
+    color: #0c3724;
+}
+
+.special_events_container p {
+    color: #0c3724;
+}
+
+.special_events_table table {
+    width: 100%;
+    border: solid 1.5px black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+.special_events_table th,
+.special_events_table tr,
+.special_events_table table td {
+    border: solid 2px #039c05;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.special_events-content {
+    margin-bottom: 5rem;
+}
+
+.special_events_container {
+    margin: 0 auto;
+}
+
+/*Sign in/up Section*/
+
+.sign-in-up-form {
+    width: 360px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10vh;
+    font-family: 'Calibri', sans-serif;
+    background-color: #a3c3ce;
+
+}
+
+.sign-in-up-form h3 {
+    text-align: center;
+}
+
+.sign-in-up-button {
+    text-align: center;
+}
+
+#sign-in-btn,
+#sign-up-btn {
+    background-color: #76a1b1;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Calibri', sans-serif;
+    margin-top: 24px;
+    width: 90px;
+    height: 50px;
+}
+
+.sign {
+    font-family: 'Calibri', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Footer Section */
+
+.email_link {
+    color: #6d8a92;
+    font-family: 'Calibri', sans-serif;
+}
+
+.sign-content {
+    margin-bottom: 5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #f9dc5c;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Calibri', sans-serif;
+    font-weight: light;
+    font-size: 10pt;
+    color: #6d8a92;
+    text-align: center;
+}
+
+/* Small devices (tablets, 600.8px and above) */
+@media screen and (max-width: 991.8px) and (min-width: 600.8px) {
+
+    header {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .header-other {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 3vh;
+    }
+
+    /* Arttraction */
+    .list-types {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Dining */
+    .dining-grid {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .hotel img {
+        object-fit: cover;
+        height: 250px;
+        width: 30vw;
+    }
+
+    .restaurant {
+        width: 40vw;
+    }
+
+    .restaurant img {
+        height: 30vh;
+    }
+
+    /* Events */
+
+    .special_events_container {
+        margin: 0 12px;
+    }
+
+    .special_events_txt_and_img {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .special_events_img {
+        max-width: 100%;
+    }
+
+    /* Sign Pages Footer */
+    .sign-content {
+        margin-bottom: 5rem;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .header-middle {
+        grid-template-columns: 1fr;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .header-other {
+        margin-top: 2vh;
+    }
+
+    .content-wrap {
+        margin-bottom: 8rem;
+    }
+
+    footer {
+        height: 6rem;
+        grid-template-columns: 1fr;
+        gap: 2px;
+
+    }
+
+    footer p {
+        padding-bottom: 2px;
+    }
+
+    /* Arttractions */
+    .list-types {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .attractions-content {
+        margin-bottom: 8rem;
+    }
+
+    /* Dining */
+    .dining-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    .restaurant {
+        width: 80vw;
+    }
+
+    .restaurant img {
+        width: 70vw;
+    }
+
+    /* Reservation */
+    .reservation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel img {
+        object-fit: cover;
+        height: 300px;
+        width: 70vw;
+    }
+
+    .reservation-content {
+        margin-bottom: 8rem;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .room-price p {
+        left: 20vw;
+    }
+
+    /* Special */
+
+    .special_events_txt_and_img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .special_events_img {
+        max-width: 100%;
+    }
+
+    .special_events-content {
+        margin-bottom: 8rem;
+    }
+
+    /* Sign Pages Footer */
+    .sign-content {
+        margin-bottom: 8rem;
+    }
+}
