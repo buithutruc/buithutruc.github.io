@@ -11,22 +11,35 @@ Script Date: November 13th, 2022
 /* mobile */
 @media screen and (max-width: 767px) {
     body{
-        font-size: 70%;
+        /* font-size: 70%; */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .grid {
+        /* margin-left: 5%;
+        margin-right: 5%; */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        /* grid-template-rows: auto; */
+        gap: 30px;
     }
     
-/* Styling the header and inside header */
-
 header{
-    background-color: rgb(74, 151, 218);
+    /* background-color: rgb(74, 151, 218); */
     justify-content: center;
     padding: 0;
 }
+
 
 .navigation{
     display: flex;
     flex-direction: column;
     gap: 0;
 }
+/* 
+hr {
+    display: none;
+} */
 
 .links {
     width: auto;
@@ -34,7 +47,7 @@ header{
     text-align: center;
     padding-top: 10px;
     color: black;
-    border: solid 1px white;
+    border: solid 2px white;
     font-size: 100%;
     flex-grow: 1;
 
@@ -53,8 +66,6 @@ main{
 }
 
 h2{
-    width: auto;
-    border: solid 1px rgb(74, 151, 218) ;
     font-size: 120%;
     margin-left: 10%;
     margin-right: 10%;
@@ -78,10 +89,9 @@ h2{
 }
 
 #profileimage{
-    content: url("/images/truc-square.jpg");
+    content: url("/images/truc.jpg");
     border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    size: 50%;
     object-fit: cover;
 }
 .about{
@@ -89,42 +99,15 @@ h2{
     margin-right: 5%;
     flex-grow: 2;
 }
-#name{
-    color: rgb(74, 151, 218);
 }
-
-/* Styling the skills section */
-
-#skill{
-    background-color: rgba(74, 151, 218, 0.4);
-}
-
-.desktop{
-    display: none;
-}
-
-.mobile{
-    display:contents;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-/* Styling the activities section */
-
-.detail{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-   
-   }
 
 
 /* tablet */
 @media screen and  (max-width:991px) {
  
     h2{
-        width: auto;
-        border: solid 1px rgb(74, 151, 218) ;
+        width: 75%;
+        /* border: solid 1px rgb(74, 151, 218) ; */
         font-size: 120%;
         margin-left: 10%;
         margin-right: 10%;
@@ -132,4 +115,15 @@ h2{
         padding: 10px;
     }
 
-   }
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .grid {
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+        gap: 30px;
+    }
+}

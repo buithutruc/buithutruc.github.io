@@ -15,26 +15,56 @@
         window.addEventListener('load', startup, false);
     </script>
     <style>
+   
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 80px;
+}
+
+.grid > article {
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+    max-width: 100%;
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text > button {
+    background: rgb(74, 151, 218);
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: auto;
+    /* align-self: center;
+    justify-self: center; */
+    position: relative;
+    left: 40%;
+    border-radius: 0.5rem;
+ 
+}
+
+button:hover {
+    background-color: pink;
+    color: white;
+    font-size: 1rem;
+    /* box-shadow: 2px 3px 4px darkgreen; */
+}
 
     </style>
 </head>
 <body>
     <header>
         <div class="navigation" id="nav">
-            <a class="links" href="#introduction">ABOUT ME</a>
-            <a class="links" href="#skill">SKILLS</a>
-            <div class="links dropdown">
-                <div><a class="links-project" href="#">PROJECTS</a></div>
-                <div class="dropdown-options">
-                    <div class="dropdown-option-item"><a id="link-mobile" href="#">MOBILE</a></div>
-                    <div class="dropdown-option-item"><a id="link-web" href="#">WEB</a></div>
-                </div>
-                
-                <!-- <a class="links" href="#projects">PROJECTS</a> -->
-            </div>
-            <a class="links" href="#education">EDUCATION</a>
-            <a class="links" href="#activities">ACTIVITIES</a>
+            <a class="links" href="">ABOUT ME</a>
         </div>
+        <hr>
     </header>
     
     <main>
@@ -45,100 +75,84 @@
                     <img id="profileimage" src="images/truc.jpg" alt="Truc's profile picture">
                 </div>
                 <div class="contacts">
-                    <a href="mailto:buithutruc@gmail.com"> <img src="images/email-icon.jpg" alt="email icon"></a>
-                    <a href="https://github.com/buithutruc"><img src="images/github-icon.jpg" alt="github icon"></a>
-                    <a href="https://www.linkedin.com/in/tructtbui/"><img src="images/linkedin-icon.jpg" alt="linkedin icon"></a>
+                    <a href="mailto:buithutruc@gmail.com" target="_blank"> <img src="images/email-icon.png" alt="email icon"></a>
+                    
+                    <a href="https://github.com/buithutruc" target="_blank"><img src="images/github-icon.png" alt="github icon"></a>
+                    <a href="https://www.linkedin.com/in/tructtbui/" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin icon"></a>
                     
                 </div>  
             </div> 
             <div class="about">
                 <p> HI, I'M <span id="name"><b>TRUC</b></span>,
+                    <br>
+                    a gradudate of Computers and Information Technology program at McGill University. I am looking for work as a web developer or mobile developer.
                     <br><br>
-                    a student of Computers and Information Technology program at McGill University with a cooking background, expecting to graduate in December 2022. <br><br>Skilled with designing and technical problem-solving. A strong team player, but also a detail-oriented, self-sufficient worker when required. These are just some of the attributes I’ve honed working in professional kitchens. 
-                    <br><br>My career goal is to tune my skills and gain hands-on experience as a front end web developer or mobile developer.
-                    <br><p style="font-size: 70%;"><i>This page is a constant work in progress. If you haven't found anything you're interested, please visit it again another time.</i></p>
+                    I am a quick learner and self-motivated worker. I pay great attention to details. My past training in a culinary school and work experience in restaurants help me to appreciate hard work, understand the importance of team work, and be more efficient in a fast-paced environment.
+                    <br><br>
+                    Now, in the new profession, I can bring in more than just the ability to make good food: creativity, logic-thinking, and problem-solving.
                 </p>
-
+               
             </div>
         </div>
-
-        <!-- My technical skills -->
-        <div class="section desktop" id="skill">
-            <h2>Technical Skills</h2>
-            <table>
-                <tr>
-                    <td><li>OOP with Java</li></td>
-                    <td><li>Database Management with MySQL</li></td>
-                </tr>
-                <tr>
-                    <td><li>Web Development: HTML, CSS, and JavaScript</li></td>
-                    <td><li>Web Services development</li></td>
-                </tr>
-                <tr>
-                    <td><li>Mobile Development: Android</li></td>
-                    <td><li>Data Structures and Algorithms</li></td>
-                </tr>
-            </table>
-        </div>
-        
-        <div class="section mobile" id="skill">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>OOP with Java</li>
-                <li>Database Management with MySQL</li>
-                <li>Web Development: HTML, CSS, and JavaScript</li>
-                <li>Web Services development</li>
-                <li>Mobile Development: Android</li>
-                <li>Data Structures and Algorithms</li>
-            </ul>
-        </div>
-       
-        <!-- My projects -->
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-
-            <div id="mobile">
-                <div>
-                <p><b>MOBILE DEVELOPMENT PROJECT: MY YELP APPLICATION</b><br>For the last assignment in Mobile Development class, we were asked to make a Yelp-liked application using Yelp API. When the application is launched the first time, a list of default restaurants is shown. It also has searching, sorting, and adding to Favorites function. Codes could be provided privately to ensure the confidentiality of the assignment. </p>
-                </div> 
-
-                <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/770235212?h=0221428d6f&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        <!-- <a class="mywork" href="">See my work</a> -->
+        <div><br></div>
+        <div class="grid">
+            <article>
+                <img src="images/walking.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Seamlessly visualize quality</h3>
+                    <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+                    <button>See my work</button>
                 </div>
-            </div>
-
-            <div id="webdev">
-                <p>
-                    <b>MY FIRST WEBDEV CHALLENGE: TOY STORY 4</b><br>When enrolling in the Web Development bootcamps program at Concordia university, which I got accepted but didn't pursuade, I was required to finish a coding challenge within 10 days. The challenge was to build a movie page for Toy Story 4 using HTML, CSS, and JavaScript. The challenge could be found at <a href="https://github.com/journey-education/wd-admissions-challenge">https://github.com/journey-education/wd-admissions-challenge</a>. Without former knowledge of web development, I learned the basics in the provided links, on google, youtube, and finished the project within 4 days. My mockup could be found at <a href="https://becch.csb.app/">https://becch.csb.app/</a>
-                </p>
-            </div>
-
+            </article>
+            <article>
+                <img src="images/nature.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Completely Synergize</h3>
+                    <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+                    <button>See my work</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/synergize-nature.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Dynamically Procrastinate</h3>
+                    <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+                    <button>See my work</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/boat.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Best in class</h3>
+                    <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+                    <button>See my work</button>
+                </div>
+            </article>
+            <!-- <article>
+                <img src="images/supply-chains.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Dynamically innovate supply chains</h3>
+                    <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+                    <button>Here's why</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/sanity-check.jpg" alt="Sample photo">
+                <div class="text">
+                    <h3>Sanity check</h3>
+                    <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+                    <button>Stop here</button>
+                </div>
+            </article> -->
         </div>
-        
-        <!-- My education -->
-        <div class="section" id="education">
-            <h2>Education</h2>
-            <div class="certificate">
-                <p>JAN &#8211; DEC 2022<br>
-                COMPUTERS AND INFORMATION TECHNOLOGY, <b>MCGILL UNIVERSITY SCHOOL OF CONTINUING STUDIES</b>
-                </p>
-            </div>
-        </div>
-
-        <!-- My activities out of my professional life -->
-        <div class="section" id="activities">
-            <h2>Activities</h2>
-            <div class = detail>
-            <li>Relaxation: walking in nature, yoga, and cooking</li>
-            <li>Things that I enjoy: spending time with friends and family, travelling to new places, eating good food</li>
-            </div>
-              
-        </div>
-    
     </main>
     <footer>
-        <p class="datep">Today is 
-            <input type="text" class="text" id="txtDateNow" name="txtDateNow" size="10" value="mm/dd/yyyy" readonly="readonly" />
-        </p>
+        <!-- <p class="datep">Today is 
+            <input type="text" class="text" id="txtDateNow" name="txtDateNow" size="10" value="mm/dd/yyyy" readonly="readonly" /> -->
+        <!-- </p> -->
+        <div><br></div>
+        <hr>
     </footer>
     
     

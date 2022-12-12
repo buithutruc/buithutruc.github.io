@@ -7,15 +7,15 @@ Script Date: November 12th, 2022
 
 /* Styling the general setting */
 html{
-    color: rgba(0,0,0,0.8);
+    color: hsla(0, 3%, 30%, 1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 } 
 
 body{
-    background-color: rgba(0,0,0);
-    margin-left: 20%;
-    margin-right: 20%;
+    /* background-color: hsla(350, 100%, 88%, 0.5); */
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 p{
@@ -24,20 +24,21 @@ p{
 
 /* Styling the header and inside header */
 header{
-    background-color: rgb(74, 151, 218);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    /* background-color: rgb(74, 151, 218); */
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+    margin-top: 25px;
     justify-content: center;
 }
 
 .navigation{
     display: flex;
     flex-direction: row;
-    gap: 5px;  
+    /* gap: 1rem;   */
 }
 
 .links {
-    width: auto;
+    /* width: auto; */
     text-align: center;
     color: black;
     font-size: 100%;
@@ -49,51 +50,15 @@ a {
 }
 
 .navigation a:hover {
-    color: white;
+    color: rgb(74, 151, 218);
 }
 
-/* Styling the dropdown menu for PROJECTS */
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown-options {
-    display: none;
-    position: absolute;
-    overflow:auto;
-    background-color: rgb(74, 151, 218);
-}
-
-.dropdown:hover .dropdown-options {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.dropdown-option-item{
-    width: 100%;
-    padding-top: 8px;
-
-}
-
-#link-mobile, #link-web{
-    color: black;
-}
-
-#link-mobile:hover, #link-web:hover{
-    color: white;
-}
-
-.links-project {
-    color: black;
-}
 
 /* Styling the general main setting */
 main{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    /* background-color: whitesmoke; */
     
 }
 .section{
@@ -102,11 +67,11 @@ main{
 }
 
 h2{
-    width: 220px;
-    border: solid 1px rgb(74, 151, 218) ;
-    margin-left: 35%;
+    /* width: 220px; */
+    /* border: solid 1px rgb(74, 151, 218) ; */
+    /* margin-left: 35%; */
     text-align: center;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 /* Styling the introduction (about me) section */
@@ -116,15 +81,16 @@ h2{
 }
 
 .profile{
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 5%;
     padding: 10px;
     flex-grow: 1;    
 }
 
 #profileimage{
-    width: 200px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
     padding-bottom: 5px;
     object-fit: cover;
 }
@@ -148,65 +114,21 @@ div.contacts > a {
     padding: 8px;
 }
 
-/* Styling the skills section */
-#skill{
-    background-color: rgba(74, 151, 218, 0.4);
+.mywork {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(74, 151, 218);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-self: center;
 }
 
-.mobile{
-    display: none;
-}
-
-table{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-tr, td{
-    padding-right: 30px;
-}
-
-
-/* Styling the projects section */
-#mobile, #webdev{
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-right: 5px;
-    
-}
-#yelp{
-    float: right;
-}
-
-#yelpimage{
-    border-radius: 12px;
-}
-
-#caption{
-    font-size: 65%;
-    font-style: italic;
-}
-
-/* Styling the education section */
-#education{
-    background-color: rgba(74, 151, 218, 0.4);
-}
-
-.certificate{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-/* Styling the activities section */
-.detail{
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 /* Styling the footer */
 footer{
-    background-color: rgb(74, 151, 218);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /* background-color: rgb(74, 151, 218); */
+    /* padding-top: 2px;
+    padding-bottom: 5px; */
     justify-content: center;
 }
 
