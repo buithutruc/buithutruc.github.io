@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My tech porfolio: one-page resume" />
+    <title>One-page Resume</title>
+    <style>
+      body {
+        background: #ffffe3;
+        color: #253a52;
+        padding: 25px;
+        font-family: sans-serif;
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .container a {
+        text-decoration: none;
+        color: #ffffe3;
+        background: #1348da;
+        padding: 0 1rem;
+        height: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 1.25rem;
+      }
+      .about_me {
+        display: flex;
+      }
+
+      .profile_picture {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        margin-inline-end: 4rem;
+      }
+
+      .article_image {
+        width: 512px;
+        margin-inline-start: 4rem;
+      }
+
+      article {
+        display: flex;
+      }
+
+      @media (max-width: 1024px) {
+        .about_me {
+          flex-direction: column;
+        }
+        article {
+          flex-direction: column;
+        }
+        .article_image {
+          width: 100%;
+          margin-inline-start: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about_me">
+      <img class="profile_picture" src="../images/truc.jpg" alt="Truc" />
+      <div class="container">
+        <h2>Hello! My name is Truc. I'm a web developer.</h2>
+        <p>
+          I'm a gradudate of Computers and Information Technology program at
+          McGill University. I am looking for work as a web developer or Java
+          developer.
+          <br /><br />
+          I am a quick learner and self-motivated worker. I pay great attention
+          to details. My past training in a culinary school and work experience
+          in restaurants help me to appreciate hard work, understand the
+          importance of team work, and be more efficient in a fast-paced
+          environment.
+          <br /><br />
+          Now, in the new profession, I can bring in more than just the ability
+          to make good food: creativity, logic-thinking, and problem-solving.
+        </p>
+        <a href="../index.html" target="_blank">See my work</a>
+      </div>
+    </section>
+
+    <section class="recent_work">
+      <h2>Recent Work</h2>
+      <article class="work one">
+        <div>
+          <h3>Text Message Analysis</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <strong>Feb 2022</strong>
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+          <a href="" target="_blank">GitHub Repo</a>
+        </div>
+        <img class="article_image" src="../images/suit.jpg" alt="test" />
+      </article>
+    </section>
+    <footer>
+      <p>
+        This project is built followed instruction from
+        <a
+          href="https://www.youtube.com/watch?v=ksWsetVQjiI&t=502s"
+          target="_blank"
+          >Codecademy</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
