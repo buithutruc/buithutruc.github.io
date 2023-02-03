@@ -1,0 +1,1 @@
+npx tailwindcss init: create Tailwind config file
