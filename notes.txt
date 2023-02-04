@@ -27,3 +27,7 @@
 8. inside the package.json, right after "tailwind" inside "scripts", add:    "prettier": "npx prettier --write **/*.html": tell prettier to only look for html files and only format them
 
 9. npm run tailwind: run tailwind scripts. After this, we have css folder with style.css
+
+
+#sources
+1. https://emojipedia.org/

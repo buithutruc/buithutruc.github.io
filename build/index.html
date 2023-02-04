@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
-    <div class="header sticky top-0 z-10 bg-teal-700 text-white"></div>
+    <header class="header sticky top-0 z-10 bg-teal-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🚀 Acme Rockets </a>
+        </h1>
+        <div>
+          <button
+            id="mobile-open-button"
+            class="text-3xl focus:outline-none sm:hidden"
+          >
+            &#9776;
+          </button>
+          <nav class="hidden space-x-8 text-xl sm:block" aria-label="main">
+            <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+    </header>
   </body>
 </html>
