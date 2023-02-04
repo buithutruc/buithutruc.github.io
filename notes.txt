@@ -31,3 +31,4 @@
 
 #sources
 1. https://emojipedia.org/
+2. https://unicode-table.com/en/
