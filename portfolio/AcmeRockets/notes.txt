@@ -1,0 +1,34 @@
+1. npx tailwindcss init: create Tailwind config file
+
+2. inside input.css: add 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+3. inside the tailwind config file: content: ["./build/*.html"]
+
+4. npm init -y: create a package.json file
+
+5. inside the package.json: replace the "test" line in
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  with  
+  "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+
+6. npm i -D prettier-plugin-tailwindcss: install      "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.2.2"
+  }
+  inside the package.json file
+
+7. create .gitignore to ignore the node_modules, which was created automatically after the devDependencies was created.
+
+8. inside the package.json, right after "tailwind" inside "scripts", add:    "prettier": "npx prettier --write **/*.html": tell prettier to only look for html files and only format them
+
+9. npm run tailwind: run tailwind scripts. After this, we have css folder with style.css
+
+
+#sources
+1. https://emojipedia.org/
+2. https://unicode-table.com/en/
