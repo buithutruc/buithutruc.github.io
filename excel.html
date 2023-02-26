@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bike Buyers Report</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">PORFOLIO</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="bike.html">Excel Project</a></li>
+          <li><a href="tableau.html">Tableau Project</a></li>
+          <!-- <li><a href="#">SQL Project</a></li> -->
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/buithutruc/"
+              target="_blank"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/buithutruc"
+              target="_blank"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post">
+          <header class="major">
+            <span class="date">April 25, 2017</span>
+            <h1>Data cleaning and dashboard creating in Excel</h1>
+            <p>
+              In this project we take raw bike buyers data, perform a cleaning
+              process, then create a sales dashboard using Excel
+            </p>
+          </header>
+          <div class="image main">
+            <img src="images/bikesalesreport.png" alt="bike sales report" />
+          </div>
+          <h2>Phase 1: Cleaning Data</h2>
+          <ol>
+            <li>Copied the original, raw data to a working sheet</li>
+            <li>Removed duplicates</li>
+            <li>
+              Made the data set look clearer, changing S/M in Marital Status to
+              Single/Married, F/M in Gender to Female/Male
+            </li>
+            <li>Made sure the Income column was displayed as Currency</li>
+            <li>
+              Created a new column called Age Brackets to group people into
+              their according age groups
+            </li>
+          </ol>
+          <h2>Phase 2: Creating Pivot Tables</h2>
+          <ol>
+            <li>
+              A table showed the average income of people, breaking down by
+              their gender, who bought/did not buy a bike
+            </li>
+            <li>
+              A table showed the relationship between a person's commute
+              distance and their decision of buying/not buying a bike
+            </li>
+            <li>
+              A table showed the relationship between people's age brackets and
+              their tendency of buying/not buying a bike
+            </li>
+          </ol>
+          <h2>Phase 3: Creating Dashboard</h2>
+          <p>
+            The dashboard allowed viewers to see visually customers' tendency to
+            buy/not buy a bike based on their marital status, region, education,
+            and any other factor.
+          </p>
+          <a href="files/bike-buyers-project.xlsx" download="">Download</a> the
+          sales report.
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>Montreal QC, CA</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:buithutruc@gmail.com">buithutruc@gmail.com</a>
+            </p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/buithutruc/"
+                  target="_blank"
+                  class="icon brands alt fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/buithutruc"
+                  class="icon brands alt fa-github"
+                  target="_blank"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
