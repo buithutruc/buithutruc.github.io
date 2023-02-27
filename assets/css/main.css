@@ -3516,7 +3516,7 @@ body.is-preload #wrapper.fade-in:before {
 }
 
 #intro + #header .logo,
-.quote {
+.quotes {
   -moz-transform: translateY(2rem);
   -webkit-transform: translateY(2rem);
   -ms-transform: translateY(2rem);
@@ -3549,7 +3549,7 @@ body.is-preload #wrapper.fade-in:before {
   visibility: visible;
 }
 
-#intro.hidden + #header .quote {
+#intro.hidden + #header .quotes {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -3709,7 +3709,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   visibility: visible;
 }
 
-#header .quote {
+#header .quotes {
   margin-top: 1.25rem;
   visibility: visible;
 }
