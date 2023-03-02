@@ -9,8 +9,40 @@ const getCurrentDate = () => {
   switch (month) {
     case 1:
       monthTxt = "January";
+      break;
     case 2:
       monthTxt = "February";
+      break;
+    case 3:
+      monthTxt = "March";
+      break;
+    case 4:
+      monthTxt = "April";
+      break;
+    case 5:
+      monthTxt = "May";
+      break;
+    case 6:
+      monthTxt = "June";
+      break;
+    case 7:
+      monthTxt = "July";
+      break;
+    case 8:
+      monthTxt = "August";
+      break;
+    case 9:
+      monthTxt = "September";
+      break;
+    case 10:
+      monthTxt = "October";
+      break;
+    case 11:
+      monthTxt = "November";
+      break;
+    case 12:
+      monthTxt = "December";
+      break;
   }
 
   let todayTxt = monthTxt + " " + day + ", " + year;
@@ -70,12 +102,19 @@ const generateQuote = function () {
       quote: "Fall seven times and stand up eight",
       author: "Japanese Proverb",
     },
+    {
+      quote: "Every great dream begins with a dreamer",
+      author: "Harriet Tubman",
+    },
+    {
+      quote:
+        "Passion is energy. Feel the power that comes from focusing on what excites you",
+      author: "Oprah Winfrey",
+    },
   ];
   let arrayIndex = Math.floor(Math.random() * quotes.length);
-  console.log(arrayIndex);
 
   document.querySelector("#quote").innerHTML = quotes[arrayIndex].quote;
-  console.log(arrayIndex);
   document.querySelector("#author").innerHTML = quotes[arrayIndex].author;
 };
 
