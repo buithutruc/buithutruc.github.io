@@ -1,3 +1,7 @@
+:root {
+  --primary: palevioletred;
+  --secondary: skyblue;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +13,22 @@ body {
   min-height: 100vh;
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header {
-  margin: 1rem;
+  margin: 2rem 1rem 0 1rem;
   text-align: center;
-  color: skyblue;
+  color: var(--primary);
 }
 
 .card {
   margin: 2rem auto 0;
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  height: 350px;
   perspective: 1000px;
 }
 
@@ -47,7 +57,7 @@ body {
 }
 
 .face_front {
-  background-color: skyblue;
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,13 +66,13 @@ body {
 }
 
 .face_back {
-  background-color: pink;
+  background-color: var(--secondary);
   transform: rotateY(180deg);
 }
 
 .card_content {
-  margin: 2rem;
-  line-height: 1.5;
+  margin: 1.75rem;
+  line-height: 1.25;
   font-size: 1.25rem;
   color: #fff;
   text-align: justify;
