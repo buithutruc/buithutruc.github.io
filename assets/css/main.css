@@ -3614,6 +3614,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Header */
 
 #header {
+  padding: 8rem 2rem 6rem 2rem;
   color: #ffffff;
   -moz-align-items: center;
   -webkit-align-items: center;
