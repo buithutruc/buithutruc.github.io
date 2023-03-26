@@ -53,7 +53,7 @@ label {
 
 .recommendation,
 .improvement {
-  padding: 0;
+  padding: unset;
 }
 
 /* input, select, textarea */
