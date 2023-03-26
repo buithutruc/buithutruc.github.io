@@ -1,0 +1,329 @@
+** start of undefined **
+
+<html lang="en">
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+      freeCodeCamp Survey Form
+    </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+      </header>
+    <form id="survey-form">
+
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age (optional) <input id="number" type="number" placeholder="Age" min="10" max="130"></label>
+        
+        <label for="dropdown">Which option best describes your current role? 
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>Would you recommend freeCodeCamp to a friend?
+        <label class="recommendation" for="definitely"
+          ><input
+            id="definitely"
+            type="radio"
+            name="recommend"
+            class="inline"
+            value="definitely"
+          />
+          Definitely</label
+        >
+        <label class="recommendation"  for="maybe"
+          ><input
+            id="maybe"
+            type="radio"
+            name="recommend"
+            class="inline"
+            value="maybe"
+          />
+          Maybe</label
+        >
+        <label class="recommendation"  for="notsure"
+          ><input
+            id="notsure"
+            type="radio"
+            name="recommend"
+            class="inline"
+            value="notsure"
+          />
+          Not sure</label
+        >
+        </label>
+
+        <label for="feature">What is your favorite feature of freeCodeCamp? 
+          <select id="feature">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+          </select>
+        </label>
+<label>What would you like to see improved? (Check all that apply)
+          <label class="improvement" for="frontend">
+          <input
+            id="frontend"
+            type="checkbox"
+            required
+            name="frontend"
+            class="inline"
+            value="frontend"
+          />
+          Front-end Projects
+        </label>
+
+        <label class="improvement"  for="backend">
+          <input
+            id="backend"
+            type="checkbox"
+            required
+            name="backend"
+            class="inline"
+            value="backend"
+          />
+          Back-end Projects
+        </label>
+
+        <label class="improvement" for="data-visualization">
+          <input
+            id="data-visualization"
+            type="checkbox"
+            required
+            name="data-visualization"
+            class="inline"
+            value="data-visualization"
+          />
+          Data Visualization
+        </label>
+
+        <label class="improvement"  for="challenges">
+          <input
+            id="challenges"
+            type="checkbox"
+            required
+            name="challenges"
+            class="inline"
+            value="challenges"
+          />
+          Challenges
+        </label>
+
+        <label class="improvement"  for="community">
+          <input
+            id="community"
+            type="checkbox"
+            required
+            name="community"
+            class="inline"
+            value="community"
+          />
+          Open Source Community
+        </label>
+
+        <label class="improvement"  for="gitter">
+          <input
+            id="gitter"
+            type="checkbox"
+            required
+            name="gitter"
+            class="inline"
+            value="gitter"
+          />
+          Gitter help rooms
+        </label>
+
+        <label class="improvement"  for="videos">
+          <input
+            id="videos"
+            type="checkbox"
+            required
+            name="videos"
+            class="inline"
+            value="videos"
+          />
+          Videos
+        </label>
+
+        <label class="improvement"  for="meetups">
+          <input
+            id="meetups"
+            type="checkbox"
+            required
+            name="meetups"
+            class="inline"
+            value="meetups"
+          />
+          City Meetups
+        </label>
+
+        <label class="improvement"  for="wiki">
+          <input
+            id="wiki"
+            type="checkbox"
+            required
+            name="wiki"
+            class="inline"
+            value="wiki"
+          />
+          Wiki
+        </label>
+
+        <label class="improvement"  for="forum">
+          <input
+            id="forum"
+            type="checkbox"
+            required
+            name="forum"
+            class="inline"
+            value="forum"
+          />
+          Forum
+        </label>
+
+        <label class="improvement"  for="courses">
+          <input
+            id="courses"
+            type="checkbox"
+            required
+            name="courses"
+            class="inline"
+            value="courses"
+          />
+          Additional Courses
+        </label>
+</label>
+
+<label for="suggestion"
+          >Any comments or suggestions?
+          <textarea
+            id="suggestion"
+            name="bio"
+            rows="5"
+            cols="30"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+        
+  
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* BODY */
+body {
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: #f5f6f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+#title{
+  margin-top: 4rem;
+  font-weight: 600;
+}
+
+#description{
+  font-size: 1.25rem;
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* FORM: GENERAL */
+form {
+  background-color: #1b1b32;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* label */
+label {
+  display: block;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+.recommendation, .improvement{
+  padding: 0;
+}
+
+/* input, select, textarea */
+input,
+select, textarea {
+  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input,
+select {
+  height: 2.5rem;
+  min-height: 2rem;
+ 
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="radio"], input[type="checkbox"]
+{
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+/* button */
+#submit {
+  display: block;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: white;
+  margin: 1rem 0;
+  background-color: #37af65;
+  cursor: pointer;
+}
+
+
+
+** end of undefined **
+
