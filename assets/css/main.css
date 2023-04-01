@@ -4829,3 +4829,26 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   width: 75%;
   margin: 0 auto;
 }
+
+/* ADD-ONS */
+article > p {
+  text-align: center;
+}
+
+.double_border {
+  background-color: #ccc;
+  /* border: 4px solid orange; */
+}
+
+/* to create double-border */
+/* .double_border:before {
+  background-color: #ccc;
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 4px solid teal;
+} */
