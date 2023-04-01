@@ -3045,7 +3045,7 @@ header > h4 + p {
 }
 
 header.major {
-  margin: 0 0 4rem 0;
+  margin: 0 0 2rem 0;
   text-align: center;
 }
 
@@ -4819,4 +4819,13 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
   }
+}
+
+/* PROFILE PICTURE */
+.image.profile {
+  margin-bottom: 2rem;
+}
+.image.profile img {
+  width: 75%;
+  margin: 0 auto;
 }
