@@ -4823,7 +4823,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 /* PROFILE PICTURE */
 .image.profile {
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
 }
 .image.profile img {
   width: 75%;
