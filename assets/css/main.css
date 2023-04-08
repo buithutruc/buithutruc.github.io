@@ -158,6 +158,15 @@ textarea {
   appearance: none;
 }
 
+/* PROFILE PICTURE */
+.image.profile {
+  margin: 0 auto 2rem auto;
+}
+.image.profile img {
+  width: 62%;
+  margin: 0 auto;
+}
+
 /* Basic */
 
 @-ms-viewport {
@@ -4819,15 +4828,6 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
   }
-}
-
-/* PROFILE PICTURE */
-.image.profile {
-  margin: 0 auto 2rem auto;
-}
-.image.profile img {
-  width: 75%;
-  margin: 0 auto;
 }
 
 /* ADD-ONS */
